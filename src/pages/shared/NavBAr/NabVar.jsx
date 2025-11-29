@@ -16,6 +16,9 @@ const NabVar = () => {
       <li>
         <NavLink to="/send-parcel">Send Parcel</NavLink>
       </li>
+      <li>
+        <NavLink to="/rider">Be a Rider</NavLink>
+      </li>
       {
         user && <>
         <li>
@@ -61,7 +64,7 @@ const NabVar = () => {
            {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl"><Logo></Logo></a>
+        <span className="btn btn-ghost text-xl"><Logo></Logo></span>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

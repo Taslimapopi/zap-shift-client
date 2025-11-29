@@ -1,6 +1,7 @@
 import React from "react";
 import { CiDeliveryTruck } from "react-icons/ci";
-import { FaRegCreditCard } from "react-icons/fa";
+import { FaRegCreditCard, FaUsers } from "react-icons/fa";
+import { RiEBike2Fill } from "react-icons/ri";
 import { Link, NavLink, Outlet } from "react-router";
 
 const DasboardLayOut = () => {
@@ -89,6 +90,26 @@ const DasboardLayOut = () => {
               to="/dashboard/payment-history">
                 <FaRegCreditCard />
                 <span className="is-drawer-close:hidden">Payment History</span>
+              </NavLink>
+              
+            </li>
+            <li>
+              <NavLink
+              className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                data-tip="Approve Drivers"
+              to="/dashboard/approve-drivers">
+                <RiEBike2Fill />
+                <span className="is-drawer-close:hidden">Approve Drivers</span>
+              </NavLink>
+              
+            </li>
+            <li>
+              <NavLink
+              className="is-drawer-close:tooltip is-drawer-close:tooltip-right"
+                data-tip="Users Management"
+              to="/dashboard/users-management">
+                <FaUsers />
+                <span className="is-drawer-close:hidden">Users Management</span>
               </NavLink>
               
             </li>
